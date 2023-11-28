@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML Quiz</title>
+	<meta name="viewport" content="width=device-width, innitial-scales=1.0">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="./script.js" defer></script>
+</head>
+
+<body>
+
+
+	<header>
+		<h1 id="course-name">WPR</h1>
+		<div class="stack-circle">M</div>
+		<div class="stack-circle">E</div>
+		<div class="stack-circle">R</div>
+		<div class="stack-circle">N</div>
+	</header>
+
+	<article>
+
+		<section id="quiz-banner">
+			<h1 id="quiz-name">HTML Quiz</h1>
+		</section>
+
+		<section id="introduction" >
+			<p id="author"> By Thanh Huyen</p>
+			<h2>The Test</h2>
+			<p>The test contains 10 questions and there is no time limit.</p>
+			<p>The test is not official, it's just a nice way to see how much you know, or don't know, about HTML.</p>
+			<h2>Count Your Score</h2>
+			<p>
+				You will get 1 point for each correct answer. At the end of the Quiz, your total score will be
+				displayed.
+				Maximum score is 10 points.</p>
+			<div id="box-start">
+				<h2>Start the quiz</h2>
+				<p>Good Luck!</p>
+				<button id="btn-start">Start the HTML quiz ❯</button>
+			</div>
+		</section>
+
+		<section id="attempt-quiz" class="hide" >
+			<div id="attempt">
+			</div>
+			<div id="box-submit">
+				<button id="btn-submit">Submit your answer ❯</button>
+			</div>
+		</section>
+
+		<section id="review-quiz" class="hide">
+			<div id="review">
+			</div>
+			<div id="box-result">
+				<h2>Result:</h2>
+				<h3></h3>
+				<p class="percentage"></p>
+				<p class="comment"></p>
+				<button id="btn-try-again">Try again</button>
+			</div>
+		</section>
+
+
+	</article>
+</body>
+
+</html>

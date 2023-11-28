@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #222222;
+}
+
+header {
+    margin: auto;
+    height: 80px;
+    width: 700px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-bottom: #ccc solid 1px;
+}
+
+#course-name {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+    margin-right: auto;
+}
+
+header .stack-circle {
+    background-color: #ffee00;
+    border-radius: 100%;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: rotate(-30deg);
+}
+
+article {
+    width: 700px;
+    margin: auto;
+}
+
+
+#quiz-banner {
+    position: relative;
+    margin: auto;
+    height: 425px;
+    background: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#quiz-name  {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    max-width: 75%;
+
+}
+
+#author {
+    font-size: 14px;
+    text-align: center;
+} 
+
+#introduction p {
+    margin: 18px 0px 18px 0px;
+}
+#introduction h2 {
+    margin: 18px 0px;
+    
+}
+
+input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+#box-start {
+    text-align: center;
+    background-color: #f1f1f1;
+    border: #dcdcdc solid 1px;
+
+}
+#btn-start {
+    color: white;
+    background-color: #2196F3;
+    padding: 18px;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 18px;
+    cursor: pointer;
+} 
+#btn-start:hover {
+    background-color: #0d8bf2;
+}
+
+#attempt-quiz .question-index {
+    margin: 18px 0px;
+}
+form {
+    margin: 30px 0;
+
+}
+.option {
+    display: block;
+    margin-bottom: 1px;
+    padding: 15px;
+    background-color: #f1f1f1;
+}
+
+.option input {
+    margin-right: 15px;
+}
+#attempt-quiz .option:hover {
+    background-color: #ddd;
+}
+.option-selected {
+    background-color: #ddd !important;
+}
+#box-submit {
+    background-color: #f1f1f1;
+    border: #dcdcdc solid 1px;
+    text-align: center;
+    padding: 18px;
+}
+#btn-submit {
+    color: white;
+    background-color: #4CAF50;
+    padding: 18px;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin:auto;
+    border: none;
+    cursor: pointer;
+}
+#btn-submit:hover {
+    background-color: #46a049;
+}
+#box-result {
+    text-align: center;
+    background-color: #f1f1f1;
+    border: #dcdcdc solid 1px;
+    margin: 18px 0px;
+}
+#box-result h2 {
+    margin: 18px 0px;
+}
+#box-result h3{
+    margin: 18px 0px;
+    font-weight: normal;
+    font-size: 24px;
+}
+#box-result p{
+    margin: 18px 0px;
+}
+#box-result .percentage{
+    font-weight: bold;
+}
+#btn-try-again {
+    margin: 18px;
+    border:none;
+    cursor:pointer;
+    color: white;
+    background-color: #2196F3;
+    padding: 18px;
+    font-family:  'Proxima Nova', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+#btn-try-again:hover {
+    background-color: #0d8bf2;
+}
+#btn-try-again p{
+    margin: 18px 0;
+}
+
+#review-quiz .question-index {
+    margin: 18px 0px;
+}
+.correct-answer {
+    background-color: #d4edda;
+    position: relative;
+}
+.correct-answer::after{
+    content: "Correct answer";
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrong-answer {
+    background-color: #f8d7da;
+    position:relative;
+}
+.wrong-answer::after {
+    content:"Your answer";
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    position: absolute;
+    right: 10px; 
+    padding: 5px;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+.option-correct {
+    background-color: #ddd;
+    position: relative;
+
+}
+.option-correct::after{
+    content: "Correct answer";
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.hide {
+    display:none;
+}
+
+@media only screen and (max-width: 700px) {
+    article {
+        width: 95%;
+    }
+    header {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header .stack-circle{
+        display: none;
+    }
+    
+    
+}
